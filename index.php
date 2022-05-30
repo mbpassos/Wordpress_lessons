@@ -40,7 +40,7 @@
 
 <!-- ############## POSTS LESSON ############################## -->
 
-<?php
+<!-- <?php
 
 while(have_posts()) {
   the_post(); ?>
@@ -50,7 +50,22 @@ while(have_posts()) {
 <?php
 }
 
-?>
+?> -->
 
+<!-- ############## FOOTER & HEADER LESSON ############################## -->
+<?php get_header(); 
+
+
+while(have_posts()) {
+  the_post(); ?>
+  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <?php the_content(); ?>
+      <hr>
+<?php
+}
+
+  get_footer();
+
+?> 
 
 
