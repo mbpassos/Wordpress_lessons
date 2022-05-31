@@ -1,21 +1,28 @@
 <?php
     get_header();
     ?>
-<?php  
 
-function doubleMe($x) {
+
+<!-- function doubleMe($x) {
   return $x * 2;
-}
+ }
 
-function tripleMe($x) {
-  return $x * 3;
-}
-//functions que dao return em vez de echo são mais flexibles. Dá para usar como conditions em if statements e també
-// podem ser utilizadas como argumentos de outras funções tipo:tripleME(doubleMe(5));
+ function tripleMe($x) {
+   return $x * 3;
+ }
+ functions que dao return em vez de echo são mais flexibles. Dá para usar como conditions em if statements e també
+ podem ser utilizadas como argumentos de outras funções tipo:tripleME(doubleMe(5));
 
-echo tripleME(doubleMe(5));
+ the_title();
+ get_the_title();
 
-?>
+ the_ID();
+ get_the_ID();
+
+REGRA GERAL: SE COMEÇA COM GET, COMEÇAR COM ECHO -->
+
+
+
  
     <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>)"></div>
